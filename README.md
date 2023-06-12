@@ -13,11 +13,16 @@ If you find this respository useful, please cite:
 }
 ```
 
-## Data
-Coming soon!
-
 ## Interface
-Coming soon!
+We provide code for user study interfaces to aid reproducibility of our experiment. Specifically:
+* ```interfaces/teaching-interface/``` contains source code for the learning gain experiment for the Drawing task
+* Other interfaces: Coming soon! 
+
+
+## Data
+We provide data used to train CORGI. Specifically:
+* ```data/data.json``` contains the raw crowdsourced data without any data augmentation
+* ```data/resources/``` contains gif files corresponding to movements shown during crowdsourcing for entries in ```data.json```
 
 ## Environments
 Coming soon!
