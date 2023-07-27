@@ -18,17 +18,19 @@ If you find this respository useful, please cite:
 
 ## Interface
 We provide code for user study interfaces to aid reproducibility of our experiment. Specifically:
-* ```interfaces/teaching-interface/``` contains source code for the learning gain experiment for the Drawing task
-* Other interfaces: Coming soon! 
+* ```interfaces/teaching-interface/``` contains source code for the learning gain experiment for the Drawing task.
+* ```interfaces/data-collection-interface/``` contains source code for the our data collection process. It is currently set-up for the Drawing task, but easily adaptable to any task where the data type consists of trajectories (sequence of states/actions).
+
+To run each interface, simple run ```python server.py```, and direct your browser to ```http://localhost:8080/?username=username```.
 
 
 ## Data
 We provide data used to train CORGI. Specifically:
-* ```data/data.json``` contains the raw crowdsourced data without any data augmentation
 * ```data/resources/``` contains gif files corresponding to movements shown during crowdsourcing for entries in ```data.json```
+* ```data/data.json``` contains the raw crowdsourced data without any data augmentation. These include fun and metaphorical examples across the different physical control tasks, such as:
+  - Drawing: _"make picture narrower and the end curl like a musical note"_, _"make the loop more like a sidewards sharks fin"_
+  - Steering: _"be brave dont be afraid dont stop"_
+  - Movement: _"softer landing needed"_, _"be more fluent in your movements"_
 
-## Environments
-Coming soon!
 
 ## Model 
-Coming soon!
