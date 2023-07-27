@@ -1,0 +1,45 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>Experiment</title>
+        <script src='https://kit.fontawesome.com/1eb1a53221.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <div class="button-div">
+            <button type="button" class="button" id="replay-button" onclick="start_correction()">replay</button>
+        </div>
+        <div class="flex-container">
+            <div class="flex-child expert">
+                <div class="canvas-title" style="color:darkolivegreen">
+                    expert
+                </div>
+                <canvas width="400" height="400" id="expert-canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+            </div>
+            <div class="flex-child student">
+                <div class="canvas-title" style="color:darkred; ">
+                    student
+                </div>
+                <canvas width="400" height="400" id="student-canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+                <div class="form">
+                    <form action="javascript:submitCorrection()">
+                        <div>
+                        <label for="feedback">What corrective feedback would you provide the student to help them learn to match the expert? <br> (aim for 5 words or less)</label><br>
+                        <input type="text" id="feedback" name="feedback" size="50"><br>
+                        </div>
+                        <div>
+                            <input type="submit" class="nextbutton" id="nextbutton" value="submit (1/10)">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js'></script>
+        <script type="text/javascript" src="static/main.js"> </script>
+    </body>
+</html>
+
+
+
