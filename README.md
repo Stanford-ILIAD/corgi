@@ -34,3 +34,4 @@ We provide data used to train CORGI. Specifically:
 
 
 ## Model 
+Please contact  ```megha@cs.stanford.edu```, as the file is too large! 
